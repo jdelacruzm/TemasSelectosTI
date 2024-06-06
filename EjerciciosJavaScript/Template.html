@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    
+    <script>
+        let nombre = "juan";
+        let paterno = "cruz";
+        let materno = "maldonado";
+        console.log(nombre + " " + paterno + " " + materno);
+        console.log(`${nombre} ${paterno} ${materno}`);
+
+        let cantidad = 2;
+        let precio = 300;
+        let evento = "Cruz Azul vs América";
+        let agenteVentas = "Juan Perez";
+
+        const email = `
+                        Hola ${nombre},
+                        Gracias por ordenar ${cantidad} tickets para el evento ${evento}.
+                        Detalles de la orden
+                        ${nombre} ${paterno} ${materno}
+                        ${cantidad} x $${precio} = $${cantidad * precio} to ${evento}
+                        Puedes recoger tus tickets 30 minutos antes en la tienda.
+                        Gracias,
+                        ${agenteVentas}
+                        `
+        const formateoHTML = `
+                    <section>
+                        <header>
+                            <h1>Orden de compra</h1>
+                        </header>
+                        <article>
+                            <h2> Hola ${nombre},</h2>
+                            <p> Gracias por ordenar ${cantidad} tickets para el evento ${evento}.</p>
+                            <h5> Detalles de la orden</h5>
+                            <p>${nombre} ${paterno} ${materno}</p>
+                            <b>${cantidad} x $${precio} = $${cantidad * precio} to ${evento}</b>
+                            <p> Puedes recoger tus tickets 30 minutos antes en la tienda.Gracias,</p>
+                            <b>${agenteVentas}</b>
+                        </article>
+                </section>`
+        document.body.innerHTML = formateoHTML;
+    </script>
+</body>
+</html>

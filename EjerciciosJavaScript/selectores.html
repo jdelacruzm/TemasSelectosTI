@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Canada</a></li>
+            <li><a href="#">Germany</a></li>
+            <li><a href="#">United States</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        Comments as of
+        <time>November 15, 2012</time>
+        <div>
+            <p>By Ricardo on <time>September 15, 2012</time></p>
+            <p>Easy on the HDR buddy.</p>
+        </div>
+        <div>
+            <p>By Susan on <time>October 1, 2012</time></p>
+            <p>I love Central Park.</p>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">Home</a> | </li>
+            <li><a href="#">Browse</a> | </li>
+        </ul>
+    </footer>
+    <script>
+        var enlaces = document.querySelectorAll("nav ul a:link");
+        console.log(enlaces);
+        var timeDiv = document.querySelectorAll("#main div time");
+        console.log(timeDiv);
+        var time = document.querySelector("#main>time");
+        console.log(time);
+        var footer = document.querySelector("footer");
+        console.log(footer);
+    </script>
+</body>
+</html>
